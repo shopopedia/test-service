@@ -1,5 +1,13 @@
+server:
+  port: 8090
+
 spring:
   application:
-    name: testservice
-    server: AWS-EC2
-    port: 9000
+    name: test-service
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+  instance:
+    preferIpAddress: true
