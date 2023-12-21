@@ -4,6 +4,15 @@ server:
 spring:
   application:
     name: test-service
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost/sql12671993
+    username: sql12671993
+    password: DKHQDncDcR
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
 
 eureka:
   client:
