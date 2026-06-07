@@ -1,13 +1,9 @@
-management:
-  endpoints:
-    web:
-      exposure:
-        include: health,info
-  endpoint:
-    health:
-      show-details: always
+server:
+  port: 8081
 
-logging:
-  level:
-    root: INFO
-    com.shopopedia: DEBUG
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521/FREEPDB1
+    username: test_service
+    password: test_service_pass
+    driver-class-name: oracle.jdbc.OracleDriver
